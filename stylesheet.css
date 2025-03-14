@@ -1,0 +1,126 @@
+@font-face{font-family:bnaz;src: url("../fonts/Bnazanin.ttf");
+    margin: 0% auto;}
+    *{margin: 0px; font-family:bnaz ;}
+    body {background-color: white;}
+    a{color:black; text-decoration:none;background-color:rgb(rgba(255, 0, 0, 0), rgba(0, 128, 0, 0), rgba(0, 0, 255, 0));}
+    body{margin:0px;}  
+    header { background-color: ;}
+        h1{text-align: right ;margin:0px;align-items: flex-end; }
+        nav{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr  4fr; color:rgb(46, 43, 43) ;padding-top:5px ;font-size:20px ;
+        direction: rtl;background-color: rgb(255, 255, 255);}
+        nav div{ display: flexbox; gap:5px;margin:5px ;text-align: center;cursor: pointer ;border-radius: 2%; text-align: center;}
+        nav div a{justify-items: center;align-items: center;text-align: center;padding-top: 3%;}
+        nav div:hover{ background-color: rgba(84, 85, 84, 0.726);padding: auto auto;}
+        nav div a:hover{color: rgb(44, 44, 39);}
+        nav div a:active{color: rgb(180, 44, 143);}
+        .navbuttom{height: 100%;width: 100%;}
+       .search_item{display: none;}
+       .language{background-color:rgb(97, 129, 188);
+        cursor: pointer;text-align:center;}
+        #menupage{overflow:scroll;border-radius: 5%;animation: imerge 0.3s;}
+#menupage div{border-bottom: 1px solid rgb(237, 235, 235) ;padding: 25%;cursor: pointer;animation: imerge2 2s;}    
+#menupage div:hover{background-color: rgb(99, 255, 47);animation: coloring 1s;}    
+  
+@keyframes coloring{from{background-color:rgba(255, 255, 255, 0);}
+to{background-color:  rgb(99, 255, 47);}    
+} 
+
+@keyframes imerge{from{width: 0%;}
+to{width: 70%;}    
+} 
+@keyframes imerge2{from{width: 0%;}
+to{width: 100%;}    
+} 
+
+main{background-color: white;padding-bottom:2% ;}
+    #parta{display: grid ;grid-template-columns:1fr 2fr; gap: 4px ; text-align: center; margin: 5px;
+       }
+    #parta img{width:55%;height:auto; border-radius:5% ; border: 5px solid black; margin-bottom:12px; }
+    
+    #parta div{background-color: white; border-radius:10% ;height:auto;}
+    
+    #parta img:hover{width:60%;height:auto; border-radius:5% ; border: 5px solid black; margin-bottom:2px ;}
+    #address div{text-align: left;}
+    
+    
+    
+    #bartext{animation: bar 10s infinite 1s linear;}
+    
+
+    
+    @keyframes bar {from{right:100%} to{right: 0%;}
+        
+    }
+    
+    
+    
+    .partb .row{display: grid;grid-template-columns: 1fr 1fr 5fr;align-items: center;text-align: center;width: 100%;}
+    .partb .row:hover{background-color: rgb(99, 255, 47);animation: coloring 1s;}
+
+    .partb div div{align-items: center;display: grid;place-content: center;width: 100%;height: 100%;}
+
+    
+    
+    
+    #partc{display: grid ;grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); } 
+    #partc div{display: grid;place-content: center; border-radius: 3%;} 
+    #partc div:hover{animation: coloringgray 1s;background-color: rgb(212, 212, 212); } 
+
+    #partc img{width: 150px;height:70px ;display: block;margin-bottom: 6px;}
+    @keyframes coloringgray{from{background-color:rgba(255, 255, 255, 0);}
+    to{background-color:  rgb(212, 212, 212);}    
+    }   
+    
+    #naghshe .pinned{display: inline-block;height:20px ;width:15px ;
+        animation: scale infinite; animation-duration: 3s  ;position:absolute ; }
+    #partc{display: grid ;grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); } 
+    #naghshe  span{background-color: aqua; cursor: pointer;}
+    #naghshe  span div:hover{background-color: rgb(116, 122, 172); cursor: pointer;color: yellow;}
+    #naghshe  span div:active{background-color: blue;}
+    
+    @keyframes scale{50%{transform:scale(2,2) ;}}
+    
+    
+    
+    #partd{ text-align: center;margin: 0% 10%;}
+    #partd div{overflow: hidden;}
+    #backi{background-color: rgb(185, 198, 225);border-radius: 10%;height: 100%;}
+    #partd img{width:100%;height: auto;}
+    #partd .slides .slide{display:none}
+    #partd .slides .active {display: block;}
+    .slides{cursor:pointer;position: relative;}
+    .right{display: none;}
+    .left{display:none ;}
+       .activeate{display: flex ;position: absolute;background-color: rgb(78, 23, 206);
+        right: 0%; height:100% ; width: 7%;color: white;
+        justify-content: center;align-items: center; 
+        }
+        #partd img{width:100%;height: auto;}
+      
+    .slides .left{left: 0%;}
+    .left:hover{background-color:  rgba(4, 84, 255,0.4);}
+    .right:hover{background-color: rgba(4, 84, 255,0.4);}
+    
+    @keyframes sheetpaper{from{right:90%} to{right: 0%;}    
+    }
+    
+    
+    
+    footer{text-align: center;border-top:solid 3px ;display: grid ;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));margin:0px ;color: aliceblue;
+    }
+    footer div{ text-align: center;z-index: -1;}
+    footer div p{padding:8px ;}
+    #addressmap{ width:200px ;} 
+    #mapad{height:200px }
+    #mapad img:hover{width:220px ;}
+    
+    @media screen and (max-width:910px){nav{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;} #corpname{display: none; }  .minimmm{display: block;} #minimenue{display: none;} }
+
+    @media screen and (max-width:3000px){nav{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;} nav div{height: 45px; display: grid;place-content:center ;}  #mini_menue{ background-color: blue; }
+     .minimmm{display: block;} #minimenue{display: none;} }
+    
+    @media screen and (max-width:560px){nav{position: fixed;} #corpname{display: none; }    .minimmm{display: block;} .overnav{display: none;} 
+    main{margin-top:80px}  #mainnavcontiner{position: fixed;}
+  .navbuttom{display: none;} footer{display: block; width: 100%;} 
+#parta{display: grid ;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));} #minimenue{display: block;} .partb div{font-size: 13px;}}
+    

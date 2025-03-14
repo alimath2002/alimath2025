@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jamali</title>
+<meta charset="UTF-8">
+<meta http-equiv="x-UA-compatible" content="ie=edge">
+<meta charset="utf-8" />
+<meta name="csrf_field_name" content="_csrf_token" />
+<meta name="keywords" content="jamali دکتر میرمصدق جمالی sharif civil "/>
+<meta name="_csrf_token" content="ImRjMjNjODI3N2NkMjk4N2EwZGViYzljNzY2ZmQ1YzFlODgyM2FkMWEi.ZtFzTw.XkfH5yG5oPZUjBtNXReGm-tKXaY" />
+<meta name="generator" content="ckan 2.10.1" />
+<link rel="icon" href="images/sharif-logo-png-transparent.png" type="image/x-icon">
+
+<link href="stylesheet.css" rel="stylesheet">
+
+<link href="./menu.js" type="javascript">
+
+<link rel="stylesheet" href="back.svg">
+
+<meta name="description" content="Dr jamali personal page">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body onclick="down()" onscroll="down()" >
+
+  <img src="images/head.jpg" alt="SUT-civil" style="position: absolute;bottom: 0%;width: 100%;position: fixed;z-index: -3;">
+  
+  <div style="position: absolute;bottom: 0%;width: 100%;position: fixed;z-index: -3;height: 400px;background-color: rgba(33, 115, 230, 0.5);" ></div>
+  </div>
+  
+  <div style="color: white;">
+    <div id="menupage" style="position: absolute;right: 0%;width: 74%;
+    height: 100%;background:linear-gradient(to bottom ,rgb(82, 82, 238), rgb(11, 11, 99)); z-index: 4;display: none;
+    position: fixed;" class="menulittle">
+    <div style="display: flex;align-items: center;justify-content: center;align-content: center;">
+      <h1 style="text-align: center;">
+        Dr. Mirmosadegh jamali
+      </h1>
+  
+    </div>
+  <div onclick="openspcmenu(1)" onmousemove="openspcmenu(1)">
+    About
+    <div class="aboutmenue1 ; aboutmenuall" style="display: none;">
+      <a href="index.html" style=" display: block;width: 100%;height: 100%;"> Professor Jamali</a>
+    </div>
+    
+  </div>
+  
+  <div onclick="openspcmenu(2)" onmousemove="openspcmenu(2)">
+    publication
+    <div class="aboutmenue2 ; aboutmenuall" style="display: none;">
+      <a href="publication/paper.html" style=" display: block;width: 100%;height: 100%;"> Papers</a>
+    </div>
+    <div class="aboutmenue2 ; aboutmenuall" style="display: none;">
+      <a href="publication/research.html" style=" display: block;width: 100%;height: 100%;"> Research</a>
+    </div>
+    
+  </div>
+  <div onclick="openspcmenu(3)" onmousemove="openspcmenu(3)">
+    people
+    <div class="aboutmenue3 ; aboutmenuall" style="display: none;">
+      <a href="people/graduate.html" style=" display: block;width: 100%;height: 100%;">Graduate Students</a>
+    </div>
+    <div class="aboutmenue3 ; aboutmenuall" style="display: none;">
+      <a href="people/undergraduates.html" style=" display: block;width: 100%;height: 100%;">Graduate Students</a>
+    </div>
+    
+  </div>
+  <div onclick="openspcmenu(4)" onmousemove="openspcmenu(4)">
+    Courses
+    <div class="aboutmenue4 ; aboutmenuall" style="display: none;">
+      <a href="courses/fluidmechanic.html" style=" display: block;width: 100%;height: 100%;"> Fluid Mechanics</a>
+    </div>
+    <div class="aboutmenue4 ; aboutmenuall" style="display: none;">
+      <a href="courses/hydrulics.html" style=" display: block;width: 100%;height: 100%;"> Hydraulics</a>
+    </div>
+    <div class="aboutmenue4 ; aboutmenuall" style="display: none;">
+      <a href="courses/Environmentaleng.html" style=" display: block;width: 100%;height: 100%;"> Environmental Hydraulics</a>
+    </div>
+    <div class="aboutmenue4 ; aboutmenuall" style="display: none;">
+      <a href="courses/creativityeng.html" style=" display: block;width: 100%;height: 100%;"> Creativity and Innovation in Engineering</a>
+    </div>
+  
+  </div>
+  
+  <div onclick="openspcmenu(5)" onmousemove="openspcmenu(5)">
+    <a href="news/news.html" style=" display: block;width: 100%;height: 100%;"> News & Events</a>
+  
+  </div>
+    </div>
+  </div>
+  
+  
+    <div style="position: absolute;right: 0%;width: 100%;height:100%; 
+    background-color: rgba(5, 4, 4, 0.523); z-index: 3; position: fixed;display: none;"
+    onclick="closemenue()" class="menulittle">
+  
+  
+    </div>
+  
+    <header >
+       
+  
+  <!--     
+        <div style=" display: inline;direction: ltr;display: flexbox; text-align: left;
+        margin: 10px 10px 4px 10px ;">
+      -->
+        <div style="display: flexbox; ">
+      <img src="images/OIP.svg" alt="sharif" style="width: auto; height: 50px;cursor:pointer;display: inline-block; position: fixed;z-index: 1;" 
+      id="toplogo">
+      
+  <div  class="overnav" style="margin-bottom:13px;direction: rtl;padding-top:5px;padding-right:5px;">
+    Sharif University of Technology
+    
+   </div>
+  
+    <div class="overnav" style="margin-bottom:10px;direction: rtl;padding-right:5px;">
+      Department of Civil Engineering
+  
+  </div>
+  <div></div>
+  
+  
+  
+  <!--    
+      <script type="text/javascript">
+  
+  function forget(){
+    if(document.querySelector("#englishlang").value==false)
+  {
+    document.querySelector("#persianlang").textContent="";
+    document.querySelector("#englishlang").textContent=""; 
+  }
+  document.querySelector("#englishlang").value=false;
+  }
+  function openlist(){
+    if(document.querySelector("#englishlang").value==false)
+  {
+    document.querySelector("#persianlang").textContent="فارسی";
+    document.querySelector("#englishlang").textContent="english"; 
+    document.querySelector("#englishlang").value=true;   
+  
+  }
+  }
+         </script>
+  -->
+  
+     
+  </div>  
+            
+  
+  
+  
+  
+  
+     
+      
+   <div style="text-align: right;">
+     <a href="home/homepage.html" style="color: black;">
+     <h2 id="corpname" style="margin-right: 20px;">
+         Dr.Mirmosadegh Jamali
+         
+       </h2>
+  
+     </a>
+  
+     <!--
+     <div style="direction: rtl;">
+     <select name="" id="" onchange="location=this.value;" style="cursor:pointer;margin:0%;display:block;height:50px ; width:45px ; font-size:0% ;background: url(medise.saman/images/OIP\ \(1\).png);background-repeat:no-repeat  ;background-size:50px 50px;border: 0px;" >
+       <option  value="" style="font-family: bnaz;font-size: 26px; color: aliceblue; background-color: blue;">english</option>
+       <option value="" style="font-family: bnaz;font-size: 26px; color: aliceblue; background-color: blue;">فارسی</option>
+     
+     </select>
+     </div>
+     -->
+   </div>
+  
+  
+  
+   <script type="text/javascript">
+  
+    function down(){
+
+
+      
+
+        let m=document.getElementsByClassName('navbut');
+
+        for (let index = 0; index < m.length; index++) {
+        m[index][0].selected='true';
+        
+    }
+
+
+
+
+    var offsets = document.getElementById('navigation').getBoundingClientRect();
+    var top = offsets.top;
+    var offsets = document.querySelector("body").getBoundingClientRect();
+    var userview = offsets.top;
+    var pageweidth =offsets.width;
+  
+    if(top < 3 & pageweidth>560){
+      
+      document.getElementById('corpname').style.display="none";
+      document.getElementsByClassName('overnav')[0].style.display="none";
+      document.getElementsByClassName('overnav')[1].style.display="none";
+      
+      document.getElementById('navigation').style.position="fixed";
+      document.getElementById('navborder').style.position="fixed";
+  
+    }
+    if(userview > -10  & pageweidth>560){
+  
+   document.getElementById('corpname').style.display="block";
+   document.getElementsByClassName('overnav')[0].style.display="block";
+   document.getElementsByClassName('overnav')[1].style.display="block";
+  
+  document.getElementById('navigation').style.position="relative";
+  document.getElementById('navborder').style.position="relative";
+  
+  
+  }
+  
+  
+  if(userview > -40  & pageweidth>560){
+  
+  let a=70+userview*0.5;
+  document.getElementById('toplogo').style.height =a+'px';
+  
+  
+  }
+    }
+    </script>
+  
+  <div style=""  class="navcontainer">
+    
+  </div>
+  
+  </div>
+  
+  
+  <div style="height: 60px;background-color: rgb(255, 255, 255);width: 100%; "  class="navcontainer" id="mainnavcontiner">
+    
+  
+  <div style="background-color: rgb(255, 255, 255);direction: rtl;" id="minimenue">
+    <img style="cursor: pointer;" onclick="openmenue()" width="48" height="48" src="https://img.icons8.com/color/48/menu--v1.png" alt="menu--v1"/>
+  </div>
+  
+   <nav id="navigation">
+    <div class="navbuttom" style="height: 45px;">
+     <a href="news/news.html" style="display: block;height: 100%;">
+    
+        News and Events
+    
+       </a>
+    </div>
+    <div class="navbuttom">
+      
+      
+     <select name="proj" class="navbut" id="selection" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:100% ;color:black;"> 
+       <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;" selected > Courses</option>
+       <option value="courses/fluidmechanic.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> fluid Mechanics</option>
+       <option value="courses/hydrulics.html" style="background-color: rgb(121, 121, 137);cursor: pointer;">  Hydraulics </option>
+       <option value="courses/Environmentaleng.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Environmental Hydrodynamics </option>
+       <option value="courses/creativityeng.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Creativity and Innovation in Engineering</option>
+     </select>
+  <script type="text/javascript">
+  setInterval(()=>{
+    let m=document.querySelector("#selection")[0];
+    m.selected='true';
+  },1000)
+   
+   
+   </script>
+  
+  
+    </div>
+    
+    <div class="navbuttom">
+    <select name="proj"  class="navbut" id="selection" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:100% ;color:black;"> 
+      <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;" selected > people</option>
+      <option value="people/graduates.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Graduate Students </option>
+      <option value="people/undergraduates.html" style="background-color: rgb(121, 121, 137);cursor: pointer;">  undergraduate Students </option>
+    </select>
+  </div>
+    
+  <div class="navbuttom">
+    <select name="proj" class="navbut"  id="selection" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:100% ;color:black;"> 
+      <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;" selected > publication</option>
+      <option value="publication/papers.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Papers  </option>
+      <option value="publication/research.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Research And Studies </option>
+    </select>
+  </div>
+  
+     
+    <div class="navbuttom">
+      <select name="proj" class="navbut"  id="selection" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:100% ;color:black;"> 
+        <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;" selected > About</option>
+        <option value="index.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> About Dr. jamali </option>
+      </select>
+    </div>
+  
+  <!--
+  <div id="search_box" style="position: relative; " onclick="open_box()">
+  <input type="text" style="width:80% ; border-radius: 10px; background-color: aqua;" id="search_text" >
+  <div id="search_itemsk" class="search_iteml" style="position: absolute;top: 80%;z-index: 1; background-color: white;
+  width: 100%; border-radius: 0% ; height: 400%;overflow: scroll;" inputmode="border-radius:50%" >
+  <div class="search_rsu" id="search_res1">dsd</div>
+  <div class="search_rsu" id="search_res2">sadad</div>
+  <div class="search_rsu" id="search_res3">asd</div>
+  <div class="search_rsu" id="search_res4">23asd</div>
+  <div class="search_rsu" id="search_res5">asd</div>
+  <div class="search_rsu" id="search_res6">efw</div>
+  <div class="search_rsu" id="search_res7">ewfw</div>
+  </div>
+  </div>
+  <script src="search.js" ></script>
+  -->
+  
+  
+  </nav>
+  
+  
+    
+     
+  </div>
+  
+  
+   
+  
+  
+  </header>
+  
+  <div id="navborder"
+  style="height: 5px;background:linear-gradient(to right ,rgba(20, 205, 97, 0.963),rgba(43, 94, 205, 0.985));z-index: 1;width: 100%;">
+  
+  </div>
+
+   <main>
+      
+  <div id="parta">
+    
+      <div class="noneimportant">
+       <img src="images/personalimage.jpg">
+
+       <div style="padding:2% 0% ;"><b style="font-size: larger;">Dr. Mirmosadegh Jamali</b></div>
+       <div style="padding:0.5% 0% ;">
+        Professor (On leave)
+       </div>
+       <div style="padding:0.5% 0% ;">
+        Civil Engineering Department, Sharif University of Technology
+       </div>
+       <div style="padding:0.5% 0% ;">
+       Water &   Environmental Engineering
+      </div>
+      </div>
+    
+     
+      <div class="noneimportant" id="address">
+        <div ><h1 style="text-align: center; ">contacts</h1></div>
+        <div style="padding: 10px; border-top:1px solid rgb(48, 226, 246) ;border-radius: 0;"><b>EMAIL</b></div>
+       <div style="margin-bottom: 14px;">
+       <a href="mailto:jamali@sharif.edu" style="margin-bottom: 8px;color: blue;">jamali@sharif.edu</a>
+       </div>
+
+       <div style="padding: 10px; border-top:1px solid rgb(48, 226, 246) ;border-radius: 0;"><b>ADDRESS</b></div>
+       <div style="margin-bottom: 14px;">
+        Dr. Mirmosadegh Jamali, P. Eng.
+
+        Department of Civil Engineering
+        
+        Sharif University of Technology
+        
+        Azadi Avenue
+        
+        Tehran, Iran
+       </div>
+
+       <div style="padding: 10px; border-top:1px solid rgb(48, 226, 246) ;border-radius: 0;"><b>TELEPHONE</b></div>
+       <div style="margin-bottom: 14px;">
+       <a href="callto:+98 021 6616 4215" style="margin-bottom: 8px;color: blue;cursor: pointer;">+98 (21) 6616-4215</a>
+       </div>
+
+       <div style="padding: 10px; border-top:1px solid rgb(48, 226, 246) ;border-radius: 0;"><b>OFFICE</b></div>
+       <div style="margin-bottom: 14px;">
+        411 in  Civil Engineering Department
+             </div>
+
+       <div style="padding: 10px; border-top:1px solid rgb(48, 226, 246) ;border-radius: 0;"><b>ASSISTANT</b></div>
+       <div style="margin-bottom: 14px;">
+       <a href="mailto:aliseper2002" style="margin-bottom: 8px;">Ali .M Sepehr</a>
+       </div>
+
+      </div>
+     
+      
+
+      
+      
+</div>
+
+
+<h3 style="display: grid;place-content: center;">Educational Background</h3>
+
+<div class="partb">
+  
+  <div style="background-color: rgb(32, 24, 24);height: 40px;" class="row">
+    <div style="background-color:whitesmoke;">
+Graid
+    </div>
+    
+    <div style="background-color: whitesmoke;">
+    Date
+    </div>
+    <div style="background-color: whitesmoke">
+Place
+    </div>  
+  </div> 
+
+
+    <div style="background-color: rgb(32, 24, 24);height: 40px;" class="row">
+      <div style="background-color: whitesmoke">
+  
+Ph.D.
+      </div>
+      
+      <div style="background-color: whitesmoke;">
+        1993 - 1998
+      </div>
+      <div style="background-color: whitesmoke;">
+        Civil Engineering, The University of British Columbia, Vancouver, Canada
+      </div>  
+    </div>  
+
+      
+<div style="background-color: rgb(32, 24, 24);height: 40px;" class="row">
+      <div style="background-color: whitesmoke;">
+        M.Sc.
+      </div>
+      
+      <div style="background-color: whitesmoke;">
+        1997 - 2000
+      </div>
+      <div style="background-color:whitesmoke;">
+        Applied Mathematics, The University of British Columbia, Vancouver, Canada
+
+
+      </div>  
+    </div>  
+
+
+    <div style="background-color: rgb(32, 24, 24);height: 40px;" class="row">
+      <div style="background-color: whitesmoke;">
+        M.A.Sc.
+      </div>
+      
+      <div style="background-color:whitesmoke;">	
+      1987 - 1990
+      </div>
+      <div style="background-color:whitesmoke;">
+        Structural Engineering, Sharif University of Technology, Tehran, Iran
+      </div>  
+    </div>  
+
+    <div style="background-color: rgb(32, 24, 24);height: 40px;" class="row">
+      <div style="background-color:whitesmoke;">
+        B.A.Sc.
+      </div>
+      
+      <div style="background-color: whitesmoke;">
+        1983 - 1987
+      </div>
+      <div style="background-color:whitesmoke;">
+        Civil Engineering, Sharif University of Technology, Tehran, Iran
+
+
+      </div>  
+    </div>  
+
+
+
+
+    <h3 style="display: grid;place-content: center;">Academic Background</h3>
+
+    <div class="partb">
+      
+      <div style="background-color: rgb(255, 255, 255);height: 40px;" class="row">
+        <div style="background-color:whitesmoke;">
+          position
+        </div>
+        
+        <div style="background-color: whitesmoke;">
+        Date
+        </div>
+        <div style="background-color: whitesmoke">
+        Place
+        </div>  
+      </div> 
+    
+    
+        <div style="background-color: rgb(255, 255, 255);height: 40px;" class="row">
+          <div style="background-color: whitesmoke">
+      
+            Faculty Member
+          </div>
+          
+          <div style="background-color: whitesmoke;">
+            1999-present
+
+          </div>
+          <div style="background-color: whitesmoke;">
+            Department of Civil Engineering, Sharif University of Technology, Tehran, Iran
+
+          </div>  
+        </div>  
+    
+          
+    <div style="background-color: rgb(255, 255, 255);height: 40px;" class="row">
+          <div style="background-color: whitesmoke;">
+            Visiting Associate Professor
+
+          </div>
+          
+          <div style="background-color: whitesmoke;">
+            2006
+                    </div>
+          <div style="background-color:whitesmoke;">
+            Department of Civil Engineering, MIT, USA    
+    
+          </div>  
+        </div>  
+    
+    
+        <div style="background-color: rgb(255, 255, 255);height: 40px;" class="row">
+          <div style="background-color: whitesmoke;">
+            Visiting Assistant Professor
+
+          </div>
+          
+          <div style="background-color:whitesmoke;">
+            
+            Summer 2004
+
+          </div>
+          <div style="background-color:whitesmoke;">
+            Department of Civil Engineering, The University of British Columbia, Vancouver, Canada
+
+          </div>  
+        </div>  
+    
+        <div style="background-color: rgb(255, 255, 255);height: 40px;" class="row">
+          <div style="background-color:whitesmoke;">
+            Visiting Assistant Professor
+
+          </div>
+          
+          <div style="background-color: whitesmoke;">
+            Summer 2003
+
+          </div>
+          <div style="background-color:whitesmoke;">
+            Department of Mathematics, The University of British Columbia, Vancouver, Canada    
+    
+          </div>  
+        </div> 
+
+        <div style="background-color: rgb(255, 255, 255);height: 40px;" class="row">
+          <div style="background-color:whitesmoke;">
+            Visiting Assistant Professor
+
+          </div>
+          
+          <div style="background-color: whitesmoke;">
+            Summer 2002
+
+          </div>
+          <div style="background-color:whitesmoke;">
+            Department of Mathematics, The University of British Columbia, Vancouver, Canada    
+    
+          </div>  
+        </div> 
+
+
+
+        
+
+  </div>
+</div>
+
+<h3 style="display: grid;place-content: center;">Professional Affiliations</h3>
+
+<div id="partc">
+<div>
+<img src="images/OIP (1).png" alt="">
+
+  American Geophysical Union
+
+</div>
+
+<div>
+  <img src="images/XB1193 (1).png" alt="">
+               International Association for Hydraulic Research
+
+</div>
+
+
+<div>
+
+  <img src="images/logo.png" alt="">
+
+  American Mathematical Society
+
+
+
+</div>
+
+<div>
+  <img src="images/enggeo (1).png" alt="">
+  Engineers & Geoscientists BC
+
+
+</div>
+
+<div>
+  <img src="images/iranhyd.png" alt="">
+  Iranian Hydraulics Society
+
+
+</div>
+
+
+</div>
+  
+     
+
+  
+
+</main>
+
+
+<footer>
+     
+  <div style="height:250px ;">
+   
+     
+
+   
+
+   
+
+
+      
+
+ </footer>
+
+    <div style="background-color: rgb(50, 38, 61); text-align: center;color: rgb(151, 71, 71) ;" >
+        <p> © Copy Right Civil Engineering Department <a  href="mailto:aliseper2002" style="text-decoration:none; color: white;"> ali.m sepehr</a> 2025</p>
+    </div>
+
+<script src="./slide.js"></script>    
+</body>
+
+
+
+  <script  src="menu.js"></script>
+
+</html>
